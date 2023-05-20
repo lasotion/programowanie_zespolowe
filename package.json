@@ -1,4 +1,20 @@
-"scripts": {
-	"start": "node src",
-	"test": "jest src/app.test.js"
+{
+  "name": "cwiczenie1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src",
+    "test": "jest src/app/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patbern/programowanie-zespolowe-pb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patbern/programowanie-zespolowe-pb/issues"
+  },
+  "homepage": "https://github.com/patbern/programowanie-zespolowe-pb#readme"
 }
