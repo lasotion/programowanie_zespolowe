@@ -18,3 +18,23 @@ jobs:
       run: npm install
     - name: Run test
       run: npm test
+      
+    deploy:
+      runs-on: ubuntu-lastest
+      needs: [build]
+      steps:
+        - name: check-out
+          uses: actions/checkout@v2
+        - name: app service
+          uses: azure/appservice-build@v3
+          width:
+            platform: nodejs
+            platform-version: 14.21.3
+            source-directory: <SOURCE_DIR>
+            output-directory: <OUTPUT_DIR>
+        - name: Deploying web app to Azure
+          uses: azure/webapps-deploy@v1
+          with:
+            app-name: az204app1519
+            publish-profile: ${{ secrets.AZURE_WEB_APP_PUBLISH_PROFILE }}
+          
