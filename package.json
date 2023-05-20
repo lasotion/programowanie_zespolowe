@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/patbern/programowanie-zespolowe-pb/issues"
   },
-  "homepage": "https://github.com/patbern/programowanie-zespolowe-pb#readme"
+  "homepage": "https://github.com/patbern/programowanie-zespolowe-pb#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "supertest": "^6.3.3"
+  }
 }
